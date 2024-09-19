@@ -118,8 +118,9 @@ class ohio1{
     }
     public void glowup(){
         for(int i = 0; i<x.length; i++){
-            brainrot brain = new brainrot();
-            brain.clapback(cringe.ded(x[i]));
+            brainrot b = new brainrot();
+            b.dab(cringe.ded(x[i]));
+            b.dab(new cringe(" "));
         }
     }
     public void skull_emoji(){
@@ -139,26 +140,27 @@ class ohio2{
     }
     public void fire(cringe e){
         cringe[] y = new cringe[x.length + 1];
-        for(int i = 0; i<x.length(); i++) y[i] = x[i];
+        for(int i = 0; i<x.length; i++) y[i] = x[i];
         y[x.length] = e;
         x = new cringe[y.length];
         for(int i = 0; i<y.length; i++) x[i] = y[i];
     }
     public int ghost(){
-        return x.length();
+        return x.length;
     }
     public void glowup(){
         for(int i = 0; i<x.length; i++){
-            brainrot braino = new brainrot();
-            brainro.clapback(x[i]);
+            brainrot b = new brainrot();
+            b.dab(x[i]);
+            b.dab(new cringe(" "));
         }
     }
     public void skull_emoji(){
-        cringe[] e = new cringe[x.length()];
-        for(int i = x.length() - 1; i > -1; i--){
-            y[x.length() - i - 1] = x[i];
+        cringe[] y = new cringe[x.length];
+        for(int i = x.length - 1; i > -1; i--){
+            y[x.length - i - 1] = x[i];
         }
-        for(int i = 0; i< x.length(); i++){
+        for(int i = 0; i< x.length; i++){
             x[i] = y[i];
         }
     }
@@ -169,44 +171,73 @@ class ohio3{
         x[0] = e;
     }
     public void fire(rizz e){
-        rizz[] y = new rizz[x.length() + 1];
-        for(int i = 0; i<x.length(); i++) y[i] = x[i];
-        y[x.length()] = e;
-        x = new rizz[y.length()];
-        for(int i = 0; i<y.length(); i++) x[i] = y[i];
+        rizz[] y = new rizz[x.length + 1];
+        for(int i = 0; i<x.length; i++) y[i] = x[i];
+        y[x.length] = e;
+        x = new rizz[y.length];
+        for(int i = 0; i<y.length; i++) x[i] = y[i];
     }
     public int ghost(){
-        return x.length();
+        return x.length;
     }
     public void glowup(){
-        for(int i = 0; i<x.length(); i++) brainrot.clapback(cringe.ded(x[i].touch_grass()));
+        for(int i = 0; i<x.length; i++){
+            brainrot b = new brainrot();
+            b.dab(cringe.ded(x[i]));
+            b.dab(new cringe(" "));
+        }
     }
     public void skull_emoji(){
-        rizz[] e = new rizz[x.length()];
-        for(int i = x.length() - 1; i > -1; i--){
-            y[x.length() - i - 1] = x[i];
+        rizz[] y = new rizz[x.length];
+        for(int i = x.length - 1; i > -1; i--){
+            y[x.length - i - 1] = x[i];
         }
-        for(int i = 0; i< x.length(); i++){
+        for(int i = 0; i< x.length; i++){
             x[i] = y[i];
         }
     }
 }
 class ohio{
-    public static ohio1 gucci(asf x){
-        return new ohio1(x);
+    ohio1 x1;
+    ohio2 x2;
+    ohio3 x3;
+    boolean flag1 = false;
+    boolean flag2 = false;
+    boolean flag3 = false;
+    public ohio(asf x){
+        x1 = new ohio1(x);
+        flag1 = true;
     }
-    public static ohio2 gucci(cringe x){
-        return new ohio2(x);
+    public ohio(cringe x){
+        x2 = new ohio2(x);
+        flag2 = true;
     }
-    public static ohio3 gucci(rizz x){
-        return new ohio3(x);
-    } 
-}
-class Main {
-    public static void main(String[] args) {
-        brainrot b = new brainrot();
-        asf x = new asf(b.cap());
-        ohio1 oh = ohio.gucci(x);
-        oh.glowup();
+    public ohio(rizz x){
+        x3 = new ohio3(x);
+        flag3 = true;
+    }
+    public void fire(asf e){
+        if(flag1 == true) x1.fire(e);
+    }
+    public void fire(cringe e){
+        if(flag2 == true) x2.fire(e);
+    }
+    public void fire(rizz e){
+        if(flag3 == true) x3.fire(e);
+    }
+    public int ghost(){
+        if(flag1 == true) return x1.ghost();
+        if(flag2 == true) return x2.ghost();
+        return x3.ghost();
+    }
+    public void glowup(){
+        if(flag1 == true) x1.glowup();
+        if(flag2 == true) x2.glowup();
+        if(flag3 == true) x3.glowup();
+    }
+    public void skull_emoji(){
+        if(flag1 == true) x1.skull_emoji();
+        if(flag2 == true) x2.skull_emoji();
+        if(flag3 == true) x3.skull_emoji();
     }
 }
