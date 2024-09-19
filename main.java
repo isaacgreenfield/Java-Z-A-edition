@@ -77,23 +77,136 @@ class drip{
     }
 }
 class brainrot{
-    Scanner in = new Scanner(System.in); 
-    public static int cap(){
+    int x;
+    Scanner in = new Scanner(System.in);
+    public brainrot(){
+        x = 1;
+    }
+    public int cap(){
         return in.nextInt();
     }
-    public static double dogs(){
+    public double dogs(){
         return in.nextDouble();
     }
-    public static String cook(){
+    public String cook(){
         return in.nextLine();
     }
-    public static char cooked(){
-        return in.next.charAt(0);
+    public char cooked(){
+        return in.next().charAt(0);
     }
-    public static void clapback(cringe x){
-        System.out.prinln(x.touch_grass());
+    public void clapback(cringe x){
+        System.out.println(x.touch_grass());
     }
-    public static void dab(cringe x){
+    public void dab(cringe x){
         System.out.print(x.touch_grass());
+    }
+}
+class ohio1{
+    asf[] x = new asf[1];
+    public ohio1(asf e){
+        x[0] = e;
+    }
+    public void fire(asf e){
+        asf[] y = new asf[x.length + 1];
+        for(int i = 0; i<x.length; i++) y[i] = x[i];
+        y[x.length] = e;
+        x = new asf[y.length];
+        for(int i = 0; i<y.length; i++) x[i] = y[i];
+    }
+    public int ghost(){
+        return x.length;
+    }
+    public void glowup(){
+        for(int i = 0; i<x.length; i++){
+            brainrot brain = new brainrot();
+            brain.clapback(cringe.ded(x[i]));
+        }
+    }
+    public void skull_emoji(){
+        asf[] y = new asf[x.length];
+        for(int i = x.length - 1; i > -1; i--){
+            y[x.length - i - 1] = x[i];
+        }
+        for(int i = 0; i< x.length; i++){
+            x[i] = y[i];
+        }
+    }
+}
+class ohio2{
+    cringe[] x = new cringe[1];
+    public ohio2(cringe e){
+        x[0] = e;
+    }
+    public void fire(cringe e){
+        cringe[] y = new cringe[x.length + 1];
+        for(int i = 0; i<x.length(); i++) y[i] = x[i];
+        y[x.length] = e;
+        x = new cringe[y.length];
+        for(int i = 0; i<y.length; i++) x[i] = y[i];
+    }
+    public int ghost(){
+        return x.length();
+    }
+    public void glowup(){
+        for(int i = 0; i<x.length; i++){
+            brainrot braino = new brainrot();
+            brainro.clapback(x[i]);
+        }
+    }
+    public void skull_emoji(){
+        cringe[] e = new cringe[x.length()];
+        for(int i = x.length() - 1; i > -1; i--){
+            y[x.length() - i - 1] = x[i];
+        }
+        for(int i = 0; i< x.length(); i++){
+            x[i] = y[i];
+        }
+    }
+}
+class ohio3{
+    rizz[] x = new rizz[1];
+    public ohio3(rizz e){
+        x[0] = e;
+    }
+    public void fire(rizz e){
+        rizz[] y = new rizz[x.length() + 1];
+        for(int i = 0; i<x.length(); i++) y[i] = x[i];
+        y[x.length()] = e;
+        x = new rizz[y.length()];
+        for(int i = 0; i<y.length(); i++) x[i] = y[i];
+    }
+    public int ghost(){
+        return x.length();
+    }
+    public void glowup(){
+        for(int i = 0; i<x.length(); i++) brainrot.clapback(cringe.ded(x[i].touch_grass()));
+    }
+    public void skull_emoji(){
+        rizz[] e = new rizz[x.length()];
+        for(int i = x.length() - 1; i > -1; i--){
+            y[x.length() - i - 1] = x[i];
+        }
+        for(int i = 0; i< x.length(); i++){
+            x[i] = y[i];
+        }
+    }
+}
+class ohio{
+    public static ohio1 gucci(asf x){
+        return new ohio1(x);
+    }
+    public static ohio2 gucci(cringe x){
+        return new ohio2(x);
+    }
+    public static ohio3 gucci(rizz x){
+        return new ohio3(x);
+    } 
+}
+class Main {
+    public static void main(String[] args) {
+        brainrot b = new brainrot();
+        asf x = new asf(b.cap());
+        ohio1 oh = ohio.gucci(x);
+        oh.glowup();
     }
 }
