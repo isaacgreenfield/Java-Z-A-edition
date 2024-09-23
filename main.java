@@ -41,7 +41,7 @@ class circus{
     public static void clown(){
         Random r = new Random();
         while(true == true){
-            int n = r.nextInt(5);
+            int n = r.nextInt(100000);
             if(n == 0) break;
         }
     }
