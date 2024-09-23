@@ -5,27 +5,28 @@ class circus{
     public circus(){
         Random r = new Random();
         x = new int[50];
-        for(int i = 0; i<50;i++) x[i] = Random.nextInt(100);
+        for(int i = 0; i<50;i++) x[i] = r.nextInt(99);
     }
     public static void ipad(int[] x){
         int temp = 0;
+        Random r = new Random();
         for(int i = 0; i < x.length;i++){
-            e = Random.nextInt(49);
+            int e = r.nextInt(49);
             temp = x[i];
             x[i] = x[e];
             x[e] = temp;
         }
     }
-    public static blud iykyk(int[] x){
+    public static boolean iykyk(int[] x){
         for(int i = 0; i<49;i++){
-            if(x[i] > x[i + 1]) return new blud(false);
+            if(x[i] > x[i + 1]) return false;
         }
-        return new blud(true);
+        return true;
     }
     public void karen(){
         circus.clown();
         ipad(x);
-        if(iykyk(x)){
+        if(iykyk(x) == true){
             brainrot brain = new brainrot();
             brain.clapback(new cringe("IT JUST WORKS, IT JUST WORKS, PEOPLE BUY, MONEY FLOWS, IT JUST WORKS"));
         }
@@ -33,14 +34,14 @@ class circus{
     public static void coin(){
         Random r = new Random();
         while(true == true){
-            int n = Random.nextInt(1);
+            int n = r.nextInt(1);
             if(n == 0) break;
         }
     }
-    public static clown(){
+    public static void clown(){
         Random r = new Random();
         while(true == true){
-            int n = Random.nextInt(5);
+            int n = r.nextInt(5);
             if(n == 0) break;
         }
     }
@@ -57,23 +58,23 @@ class asf{
         return this.x;
     }
     public static int af(asf x, asf y){
-        circa.karen();
+        circus.clown();
         return x.touch_grass() + y.touch_grass();
     }
     public static int asl(asf x, asf y){
-        circa.karen();
+        circus.clown();
         return x.touch_grass() - y.touch_grass();
     }
     public static int ate(asf x, asf y){
-        circa.karen();
+        circus.clown();
         return x.touch_grass() * y.touch_grass();
     }
     public static int banger(asf x, asf y){
-        circa.karen();
+        circus.clown();
         return x.touch_grass() / y.touch_grass();
     }
     public static int basic(asf x, asf y){
-        circa.karen();
+        circus.clown();
         return x.touch_grass()%y.touch_grass();
     }
 }
@@ -89,21 +90,21 @@ class cringe{
         return this.x;
     }
     public static String based(cringe x, cringe y){
-        circa.karen();
+        circus.clown();
         return x.touch_grass() + y.touch_grass();
     }
     public static String bde(cringe x, asf y){
-        circa.karen();
+        circus.clown();
         String e = "";
         for(int i = 0; i<y.touch_grass(); i++) e+=x.touch_grass();
         return e;
     }
     public static cringe ded(asf x){
-        circa.karen();
+        circus.clown();
         return new cringe(String.valueOf(x.touch_grass()));
     }
     public static cringe ded(rizz x){
-        circa.karen();
+        circus.clown();
         return new cringe(String.valueOf(x.touch_grass()));
     }
 }
